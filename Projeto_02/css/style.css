@@ -1,0 +1,486 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "ops", sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+/**********!GENERAL SPECS!**********/
+
+@font-face{
+	src:url(../fonts/OpenSans-Light.ttf);
+	font-family: "ops";
+}
+
+@font-face{
+	src:url(../fonts/OpenSans-Regular.ttf);
+	font-family: "ops2";
+}
+
+.clear{
+	clear: both;
+}
+
+.centralizer{
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1500px){
+	.centralizer{
+		max-width: 1124px;
+	}
+}
+
+@media screen and (max-width: 1400px){
+	.centralizer{
+		max-width: 1024px;
+	}
+}
+
+/********************************/
+
+header{
+	background-color: rgb(180,180,180);
+	padding: 10px 3% 35px 3%;
+}
+
+.logo1{
+	float: left;
+	width: 230px;
+	height: 75px;
+	background-image: url('../images/logo1.png');
+	background-size: 100% 100%;
+}
+
+.logo2{
+	float: right;
+	margin-top: 15px;
+	width: 200px;
+	height: 56px;
+	background-image: url('../images/logo2.png');
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+
+@media screen and (max-width: 510px){
+
+	header{
+		text-align: center;
+	}
+
+	[class^="logo"]{
+		margin: 20px auto;
+		float: none;
+	}
+}
+
+/********************************/
+
+section.main{
+	width: 100%;
+}
+
+.background{
+	height: 600px;
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/bg-form.jpg);
+}
+
+.form-box{
+	margin-left: 30px; 
+	margin-right: 80px;
+	float: right;
+	width: 500px;
+	position: relative;
+	top: -3%;
+	height: 106%;
+	background-color: rgba(247, 247, 247, 0.7);
+	box-shadow: 3px 3px 6px 1px rgb(95,95,95);
+	z-index: 5;
+}
+
+.form-box h2{
+	padding: 25px 15px;
+	font-size: 20px;
+	color: black;
+	font-weight: normal;
+	background-color: rgba(227, 227, 227, 0.5);
+}
+
+.form-box form{
+	padding: 20px;
+}
+
+.form-box form p{
+	font-size: 18px;
+	color: #525252;
+}
+
+.form-box form input[type=text]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 50px;
+	padding-left: 5px;
+}
+
+.form-box form input[type=text]::placeholder {
+	font-size: 16px;
+}
+
+.wraped-form:not(:first-child){
+	margin-top: 40px;
+}
+
+.wraped-form:last-child{
+	margin-top: 30px;
+}
+.form-box form input[type=text],
+.form-box form input[type=submit]{
+	outline: none;
+}
+
+.form-box form input[type=submit]{
+	width: 100%;
+	margin-top: 25px;
+	font-size: 25px;
+	background-color: #033C50;
+	color: #fff;
+	border: 0;
+	cursor: pointer;
+	height: 55px;
+	text-transform: uppercase;
+}
+
+.form-box form .wraped-form p:last-child{
+	margin-top: -5px;
+}
+
+.sing{
+	left: 48%;
+	top: 95%;
+	position: relative;
+	width: 62px;
+	height: 62px;
+	background-image: url(../images/arrow.png);
+	z-index: 1;
+}
+
+@media screen and (max-width: 1500px){
+	.sing{
+		top: 95%;
+		left: 20%;
+	}
+}
+
+@media screen and (max-width: 1180px){
+	.sing{
+		top: 95%;
+		left: 20%;
+	}
+}
+
+@media screen and (max-width: 1100px){
+	.sing{
+		top: 95%;
+		left: 10%;
+	}
+}
+
+@media screen and (max-width: 764px){
+	.sing{
+		top: 95%;
+		left: 45%;
+	}
+}
+
+@media screen and (max-width: 700px){
+
+	.form-box{
+		width: 100%;
+		max-width: 450px;
+		text-align: center;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.sing{
+		top: -11%;
+		left: 45%;
+	}
+
+}
+
+/********************************/
+
+div.box2 {
+	margin-top: 2px;
+	padding: 40px 0 40px 0;
+	text-align: center; 
+	background-color: rgb(203,211,212);
+}
+
+.box2 h2{
+	width: 100%;
+	max-width: 600px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 36px;
+	color: black;
+}
+
+.box2 p{
+	width: 100%;
+	max-width: 600px;
+	margin-top: 5px;
+	font-size: 19px;
+	font-family: "ops2";
+	display: inline-block;
+}
+
+@media screen and (max-width: 650px){
+	.box2 h2{
+		max-width: 600px;
+		font-size: 31px;
+	}
+
+	.box2 p{
+		padding: 0 2px 0 2px;
+		max-width: 500px;
+		font-size: 18px;
+
+	}
+}
+
+@media screen and (max-width: 545px){
+	.box2 h2{
+		padding: 0 1px 0px 1px;
+		max-width: 500px;
+		font-size: 31px;
+	}
+
+	.box2 p{
+		padding: 0 5px 0 5px;
+		max-width: 500px;
+		font-size: 18px;
+
+	}
+}
+
+/********************************/
+
+.flex-items1 {
+	display: flex;
+	margin-top: 2px;
+}
+
+.item1{
+	order: 2;
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/mosaico1.jpg);
+	width: 60%;
+	height: auto;
+}
+
+.flex-items1 p{
+	word-wrap: break-word;
+	order: 1;
+	background-color: rgb(207,228,223);
+	width: 40%;
+	font-size: 20px;
+	font-family: "ops2";
+	font-weight: normal;
+	padding: 120px 70px 120px 60px;
+}
+
+@media screen and (max-width: 940px){
+	.flex-items1{
+		flex-direction: column;
+	}
+
+	.item1{
+		order: 1;
+		width: 100%;
+		height: 300px;
+	}
+
+	.flex-items1 p{
+		order: 2;
+		word-wrap: none;
+		width: 100%;
+		text-align: center;
+		padding: 70px 10px 70px 10px;
+	}
+}
+
+.flex-items2 {
+	display: flex;
+	margin-top: 2px;
+}
+
+.item2{
+	order: 1;
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/mosaico2.jpg);
+	width: 60%;
+	height: auto;
+}
+
+.flex-items2 p{
+	word-wrap: break-word;
+	order: 2;
+	background-color: rgb(207,228,223);
+	width: 40%;
+	font-size: 20px;
+	font-family: "ops2";
+	font-weight: normal;
+	padding: 120px 70px 120px 60px;
+}
+
+@media screen and (max-width: 940px){
+	.flex-items2{
+		flex-direction: column;
+	}
+
+	.item2{
+		order: 1;
+		width: 100%;
+		height: 300px;
+	}
+
+	.flex-items2 p{
+		order: 2;
+		text-align: center;
+		width: 100%;
+		word-wrap: none;
+		padding: 70px 10px 70px 10px;
+	}
+}
+
+.flex-items3 {
+	display: flex;
+	margin-top: 2px;
+}
+
+.item3{
+	order: 2;
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/mosaico3.jpg);
+	width: 60%;
+	height: auto;
+}
+
+.flex-items3 p{
+	word-wrap: break-word;
+	order: 1;
+	background-color: rgb(207,228,223);
+	width: 40%;
+	font-size: 20px;
+	font-family: "ops2";
+	font-weight: normal;
+	padding: 120px 70px 120px 60px;
+}
+
+@media screen and (max-width: 940px){
+	.flex-items3{
+		flex-direction: column;
+	}
+
+	.item3{
+		order: 1;
+		width: 100%;
+		height: 300px;
+	}
+
+	.flex-items3 p{
+		order: 2;
+		text-align: center;
+		width: 100%;
+		word-wrap: none;
+		padding: 70px 10px 70px 10px;
+	}
+}
+
+.flex-items4 {
+	display: flex;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.item4{
+	order: 1;
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/mosaico4.jpg);
+	width: 60%;
+	height: auto;
+}
+
+.flex-items4 p{
+	word-wrap: break-word;
+	order: 2;
+	background-color: rgb(207,228,223);
+	width: 40%;
+	font-size: 20px;
+	font-family: "ops2";
+	font-weight: normal;
+	padding: 120px 70px 120px 60px;
+}
+
+@media screen and (max-width: 940px){
+	.flex-items4{
+		flex-direction: column;
+	}
+
+	.item4{
+		order: 1;
+		width: 100%;
+		height: 300px;
+	}
+
+	.flex-items4 p{
+		order: 2;
+		text-align: center;
+		width: 100%;
+		word-wrap: none;
+		padding: 70px 10px 70px 10px;
+	}
+}
+
+/********************************/
+
+
+
+footer{
+	background-color: rgb(180,180,180);
+	padding: 30px 3% 30px 3%;
+}
+
+.logof{
+	margin: 0 auto;
+	width: 130px;
+	height: 50px;
+	background-image: url(../images/logo1.png);
+	background-size: 100% 100%;
+}
+
+footer > p{
+	text-align: center;
+	padding: 0 10px 0 10px;
+	max-width: 230px;
+}
+
+footer p:first-of-type{
+	padding: 0 10px 0 10px;
+	border-bottom: 1px solid black;
+	max-width: 100%;
+}

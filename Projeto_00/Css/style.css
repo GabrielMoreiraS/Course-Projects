@@ -1,0 +1,356 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Helvetica", sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+
+.clear{
+	clear: both;
+}
+
+header{
+	background-color: #3b5998;
+	background-image: linear-gradient(#4e69a2, #3b5998 50%);
+	padding: 18px 0;
+	border-bottom: 1px solid #133783;
+}
+
+.center{
+	max-width: 1100px; 
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.logo-img{
+	float:left;
+	width: 50%
+
+}
+
+.logo-img img{
+	max-width: 100%;
+	height: auto;
+	margin-top: 7px;
+	padding-bottom: -18px;
+	margin-bottom: -12px;
+	margin-left: 35px;
+	display: inline-block;
+}
+
+.form-login{
+	float: right;
+	width: 50%;
+}
+
+.form-login .form-element{
+	display: inline-block;
+	margin-right: 28px;
+	margin-left: -17px;
+	margin-top: -4px;
+}
+
+
+.form-login p{
+	color: #fff;
+	margin-left: 1px;
+	font-size: 12px;
+}
+
+.form-element a{
+	color: #9cb4d8;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	cursor: pointer;
+}
+.form-element a:hover{
+	text-decoration: underline;
+}
+
+.form-login .form-element > a{
+	display: block;
+	position: absolute;
+}
+.form-element input[type=password]{
+	padding-bottom: 1px;
+}
+
+.form-element input[type=email],
+.form-element input[type=password]{
+	margin-top: 5px;
+	border: 0;
+	margin-bottom: 4px;
+	border: 1px solid #1d2a5b;
+	padding: 3px;
+	outline: none;
+}
+
+.form-element input[type=submit]{
+	border: 0;
+	background: #4267b2;
+	border: 1px solid #29487d;
+	padding: 3px 6px;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+}
+
+.form-element input[type=submit]:hover{
+	background: #29487d;
+}
+
+.main{
+	background: linear-gradient(white, #D3D8E8);
+	padding: 20px 0;
+}
+
+.left{
+	width: 53%;
+	float: left;
+}
+
+.left p{
+	font-size: 20px;
+	font-weight: bold;
+	color: #273e44;
+	margin-top: 30px;
+	float: left;
+	margin-bottom: 5px;
+	max-width: 100%;
+}
+
+.left img{
+	max-width: 100%;
+}
+
+.create{
+	width: 40%;
+	float: right;
+	margin-right: 50px;
+	height: auto;
+}
+
+.center h3{
+	font-size: 17px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-weight: normal;
+}
+
+.center h2{
+	font-size: 36px;
+
+}
+
+.create-an-account{
+	margin-top: 10px;
+}
+
+.name{
+	float: left;
+	width: 50%;
+	padding-right: 10px;
+}
+
+.last{
+	float: left;
+	width: 50%;
+	
+}
+
+form.create-an-account input{
+	width: 100%;
+	margin-top: 8px;
+}
+
+form.create-an-account input[type=text],
+form.create-an-account input[type=email],
+form.create-an-account input[type=password]{
+	height: 40px;
+	padding: 8px;
+	border: 1px solid #dce0e3;
+	border-radius: 6px;
+	font-size: 20px;
+	outline: none;
+}
+
+form.create-an-account input[type=text]::placeholder,
+form.create-an-account input[type=email]::placeholder,
+form.create-an-account input[type=password]::placeholder{
+	color: #b1b1b1;
+}
+
+
+form.create-an-account input[type=submit]{
+	height: 40px;
+	border: 1px solid;
+	background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 19px;
+	max-width: 200px;
+	outline: none;
+	margin-bottom: 15px;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+form.create-an-account input[type=submit]:hover{
+	background: linear-gradient(#79bc64, #578843);
+}
+
+form .born-in h2{
+	margin-top: 20px;
+	color: #1d2129;
+	font-size: 19px;
+	font-weight: normal;
+}
+
+form select.birth{
+	float: left;
+	margin-top: 6px;
+	padding: 5px;
+	outline: none;
+	border-radius: 0;
+}
+
+.check-message a{
+	float: left;
+	font-size: 12px;
+	margin-top: 8px;
+	display: inline-block;
+	margin-left: 5px;
+	color: #385898;
+	text-decoration: none;
+}
+
+.check-message a:hover{
+	text-decoration: underline;
+}
+
+.radio{
+	float: left;
+}
+
+.radio h2{
+	display: inline-block;
+	padding-right: 30px;
+	vertical-align: middle; 
+
+}
+
+.radio input[type=radio]{
+	width: auto !important; 
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.text{
+	font-size: 12px;
+	margin-top: 15px;
+	color: #7a7c88;
+}
+
+.text a{
+	color: #385898;
+	text-decoration: none;
+}
+
+.text a:hover{
+	text-decoration: underline;
+}
+
+section.languages .center{
+	font-size: 12px;
+	padding-top: 70px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #dddfe2;
+}
+
+.usl{
+	color: #737373;
+	margin-right: 9px;
+	display: inline-block;
+}
+
+.sl{
+	color: #385898;
+	margin-right: 9px;
+	text-decoration: none;
+}
+
+.sl:hover{
+	text-decoration: underline;
+}
+
+
+@media screen and (max-width: 935px){
+	.logo-img{
+		text-align: center;
+		width: 100%;
+		float: none;
+		margin-bottom: 15px;
+		margin-left: -20px; 
+	}
+
+	.form-login{
+		margin-top: 10px;
+		float: none;
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+	}
+	
+	.form-login .form-element{
+		display: block; 
+		margin: 10px 0;
+	}
+
+	.form-element a{
+		display: inline-block; 
+		float: none;
+		width: 100%;
+		margin-left: -13px;
+		margin-top: 2px;
+	}
+
+	.form-element input[type=submit]{
+		display: inline-block;
+		text-align: center;
+		max-width: 200px;
+		margin-top: 10px;
+		margin-bottom: -10px;
+	}
+
+	.form-element input[type=email],
+	.form-element input[type=password]{
+		width: 100%;
+		max-width: 200px;
+	}
+
+	.main .left{
+		float: none;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	.main .left p{
+		width: 100%;
+	}
+
+	.create{
+		float: none;
+		width: 100%;
+		max-width: 100%;
+	}
+}
