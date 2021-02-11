@@ -48,7 +48,7 @@
             }else{
                 gb.style.display = "none";
             }
-            if((winPos + 720) > places[1].offsetTop){
+            if((winPos  + window.innerHeight) > places[1].offsetTop){
                 gb.style.backgroundColor = "white";
                gb.style.color = "rgb(71,38,99)";
             }else{

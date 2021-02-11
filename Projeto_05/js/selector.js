@@ -31,7 +31,7 @@ function selector(e){
         mouseX = 0;
     if(mouseX > barra.width())
         mouseX = barra.width();
-    var percent = (mouseX / barra.width() * 100);
+    var percent = ((mouseX * 100) / barra.width());
     fill.css("width",percent +"%");
     pointer.css("left",(percent - 4)+"%");
     var value = (percent * maxValue) / 100 + initialValue;
