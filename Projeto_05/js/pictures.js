@@ -6,7 +6,7 @@ const pictures = document.querySelectorAll('[data-pic]');
 function changeDisplayer(){
     pictures.forEach(e => {
         e.onclick = () =>{
-            displayer.setAttribute('style',e.getAttribute('style'))
+            displayer.setAttribute('style',e.getAttribute('style'));
         }
     })
 }
